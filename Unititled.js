@@ -30,3 +30,23 @@ var students = [
 })
 console.log(students);
 
+students.sort(function(c, d){
+    if (c.ratting > d.ratting){
+        return 1;
+    }
+    if (c.ratting < d.ratting){
+       return -1;
+   }
+       return 0;
+   })
+   console.log(students);
+   
+
+  function rand ()
+  {
+     var res  = Math.floor(Math.random() * 999999999);
+      return res;
+  }
+  console.log(rand());
+
+
